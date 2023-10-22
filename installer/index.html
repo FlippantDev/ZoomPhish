@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        @font-face {
+  font-family: 'BoogleSans';
+  src: url('fonts/productsansmedium-customfont.ttf') format('truetype');
+}
+
+
+        body {
+            background-color: #202020;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: "BoogleSans";
+        }
+
+        #progressbar-container {
+            width: 300px;
+            background: #363636; /* Gray for unfinished part */
+            border-radius: 5px;
+        }
+
+        #progressbar {
+            width: 0;
+            height: 7px;
+            background: #0b5cff; /* Blue for finished part */
+            border-radius: 5px;
+        }
+
+        #message {
+            margin-top: 10px;
+            color: #202020;
+        }
+
+        .logo{
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+    <img id="logo" src="https://st2.zoom.us/static/6.3.16441/image/new/topNav/Zoom_logo.svg" class="logo">
+    <div id="progressbar-container">
+        <div id="progressbar"></div>
+    </div>
+    <div id="message">0%</div>
+
+    <script>
+        function updateProgressBar() {
+            const progressBar = document.getElementById('progressbar');
+            const message = document.getElementById('message');
+
+            let progress = 0;
+
+            // Simulate progress (you can replace this with actual progress logic)
+            const interval = setInterval(() => {
+                progress += .5;
+                progressBar.style.width = progress + '%';
+                message.textContent = ` ${progress}%`;
+
+                if (progress >= 100) {
+                    clearInterval(interval);
+                    message.textContent = 'Downloading...';
+
+                    // Simulate a download link (you can replace this with an actual download mechanism)
+                    setTimeout(() => {
+                        const downloadLink = document.createElement('a');
+                        downloadLink.href = 'your_zip_file.zip';
+                        downloadLink.download = 'your_zip_file.zip';
+                        downloadLink.click();
+                    }, 1000);
+                }
+            }, 50); // Adjust the interval and progress logic as needed
+        }
+
+        updateProgressBar();
+    </script>
+</body>
+</html>

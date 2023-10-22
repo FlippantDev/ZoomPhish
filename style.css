@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@800&family=Rubik&display=swap');
+
+
+html{
+  scroll-behavior: smooth;
+}
+/* Style the scrollbar */
+::-webkit-scrollbar {
+  width: 8px; /* Reduce width by 20% */
+}
+
+/* Track (the area behind the thumb) */
+::-webkit-scrollbar-track {
+  background: #202020; /* Color of the track */
+}
+
+/* Thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background: #202020; /* Color of the thumb */
+  border-radius: 4px; /* Rounded corners */
+}
+
+/* On hover, style the thumb */
+::-webkit-scrollbar-thumb:hover {
+  background: #202020; /* Color on hover */
+}
+
+@font-face {
+  font-family: 'InstaFont';
+  src: url('fonts/instafont.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'BoogleSans';
+  src: url('fonts/productsansmedium-customfont.ttf') format('truetype');
+}
+
+body{
+  justify-content: center;
+  background-color: #202020; /* Dark background color */
+  font-family: 'BoogleSans';
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-box {
+  border-radius: 3px;
+  padding: 2em;
+  width: 300px;
+  color: white;
+}
+
+.content-head {
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 0 0 1em;
+}
+
+.is-center {
+  text-align: center;
+}
+
+.button-success {
+  background: #0b5cff;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  font-size: 15px;
+  padding: 8px; /* Increased padding for the button */
+  display: block; /* To center-align the button */
+  margin: 0 auto; /* To center-align the button */
+  width: 270px;
+  font-family: "BoogleSans";
+  cursor: default;
+  margin-bottom: 10px;
+  
+}
+
+.button-success:hover {
+  background: #0853e9;
+}
+
+.pure-group input {
+  width: 95%;
+
+  border-radius: 9px;
+  font-size: 12px;
+}
+
+.pure-group{
+  border: 1px solid #202020;
+  border-radius: 3px;
+  font-size: 1em;
+}
+
+.thankyou_message {
+  text-align: center;
+  margin-top: 1em;
+}
+
+.form-input{
+  margin-bottom: 2px;
+  border: 1px solid #666666; /* Dark border color */
+background:   #202020;
+border-radius: 13px;
+padding-left: 10px;
+position: relative;
+height: 35px;
+transition: box-shadow 0.2s;
+color: white;
+}
+
+.form-input:focus{
+  border: 1px solid #0b5cff; /* Dark border color */
+  outline-offset: 0px;
+  outline: none;
+}
+
+.placeholder-label {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition: all 0.2s;
+  opacity: 0.5;
+}
+
+
+.logo{
+  display:block;
+margin: 0 auto 5px;
+height: 50px;
+font-family: "InstaFont";
+color: white;
+font-size: 50px;
+text-align: center;
+margin-bottom: 50px;
+}
+
+/* Your existing CSS code remains unchanged */
+
+.signup-box {
+  background: #fff;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  padding: 2em;
+  width: 300px;
+  margin-top: 20px; /* Add space between login and signup boxes */
+}
+
+.signup-box h2 {
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 0 0 1em;
+}
+
+/* Adjust styles for form inputs as needed */
+
+
+
+
+
+form.option{
+  color:#b6b4b4;
+  margin: 70px ;
+  position:relative;
+  }
+
+.formline{
+  color:aqua;
+}
+  .fblink{
+      margin-top: 30px;
+      width: 100%
+  }
+  .fblink span{
+      font-size: 18px;
+      color : rgb(76, 180, 248);
+      margin-right: 5px;
+      text-align: center;
+      
+  }
+  .fblink a{
+    text-decoration: none;
+  font-weight: bold;
+  color : rgb(76, 180, 248);
+  text-align: center;
+  }
+  .forget-id{
+      margin: 15px;   
+  }
+  .forget-id a{
+      text-decoration: none;
+      color: rgb(56, 81, 133);
+      font-size: 12px;
+      font-weight: 500;
+      
+  }
+  .page .singup{
+      border:1px solid #b6b6b6;
+      border-radius: 2px;
+      width: 90%;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top: 25px;
+      text-align: center;
+  }
+  
+  .singup a{
+    background: #414141;
+    color: rgb(105, 105, 105);
+    border: none;
+    border-radius: 7px;
+    font-size: 15px;
+    padding: 8px; /* Increased padding for the button */
+    display: block; /* To center-align the button */
+    margin: 0 auto; /* To center-align the button */
+    width: 200px;
+    font-family: "BoogleSans";
+    cursor: default;
+    text-decoration: none;
+    text-align: center;
+      
+  }
+
+  .singup2 a{
+    background: #0b5cff;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 7px;
+    font-size: 15px;
+    padding: 8px; /* Increased padding for the button */
+    display: block; /* To center-align the button */
+    margin: 0 auto; /* To center-align the button */
+    width: 200px;
+    font-family: "BoogleSans";
+    cursor: default;
+    text-decoration: none;
+    text-align: center;
+      
+  }
+
+  .singup2 a:hover{
+    background: #0853e9;
+  }
+
+
+
+  .fblink{
+    text-align: center;
+  }
+
+  /* Your existing CSS code remains unchanged */
+
+.text-section {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.images-section {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.images-section img {
+  width: 100px; /* Adjust the width as needed */
+  margin: 0 10px; /* Adjust the margin to separate the images */
+}
+
+
+
+/* Your existing CSS code remains unchanged */
+
+/* Your existing CSS code remains unchanged */
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page-container .login-container {
+  flex-grow: 1;
+}
+
+.instagram-footer {
+  background-color: #f7f7f7;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.instagram-footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.instagram-footer ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.instagram-footer ul li a {
+  text-decoration: none;
+  color: #003569;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.copyright {
+  margin-top: 10px;
+  color: #999;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+
+
+
+/* PRELOADER IMAGE SECTION-----------------------------------------------------------------------------------------------------------------------------------*/
+
+.preloader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #202020;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 9999;
+}
+
+.preloader img {
+  height: 23px;
+}
+
+/* Add animation to fade out the preloader */
+.fade-out {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease-in-out;
+}
+
+
+.installzoom a{
+  background: #0b5cff;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 7px;
+  font-size: 15px;
+  padding: 8px; /* Increased padding for the button */
+  display: block; /* To center-align the button */
+  margin: 0 auto; /* To center-align the button */
+  width: 200px;
+  font-family: "BoogleSans";
+  cursor: default;
+  text-decoration: none;
+  text-align: center;
+    
+}
+
+.installzoom a:hover{
+  background: #0853e9;
+}

